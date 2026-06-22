@@ -19,21 +19,3 @@
 //     }
 // }
 
-
-public class arraySortedRotated{
-    public static boolean check(int num[]){
-        int count =0;
-        int n = num.length;
-        for(int i=0;i<num.length;i++){
-            if(num[i]>num[(i+1)%n]){
-                count++;
-            }
-        }
-
-        return count<=1;
-    }
-    public static void main(String[] args) {
-        int num[]={3,4,5,1,2};
-        System.out.println(check(num));
-    }
-}
